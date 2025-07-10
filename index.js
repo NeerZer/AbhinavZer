@@ -429,9 +429,7 @@ class NewsProcessor {
   cleanseText(text) {
     if (typeof text !== "string") return "";
     return text
-
-      .replace(/[^\w\s.,-]/g, " ")
-
+      .replace(/[^\w\s.,%:$₹+-]/g, " ")
       .replace(/\s+/g, " ")
       .trim()
       .substring(0, 3000);
