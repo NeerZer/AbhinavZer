@@ -10,7 +10,7 @@ dotenv.config();
 const CONFIG = {
   groqApiKey: process.env.GROQ_API_KEY,
   websiteUrl: process.env.WEBSITE_URL || "https://pulse.zerodha.com",
-  groqModel: process.env.GROQ_MODEL || "llama3-8b-8192",
+  groqModel: process.env.GROQ_MODEL || "llama-3.1-8b-instant",
   apiInterval: parseInt(process.env.API_INTERVAL || "30000", 10),
   groqRequestDelay: parseInt(process.env.GROQ_REQUEST_DELAY || "1500", 10),
   maxHtmlContentLength: parseInt(
