@@ -19,10 +19,10 @@ const CONFIG = {
   ),
   wpApiUrl:
     process.env.WP_API_URL ||
-    "https://profitbooking.in/wp-json/scraper/v1/zerodha",
+    "https://rajakrishna.in/wp-json/scraper/v1/zerodha",
   wpExtraApiUrl:
     process.env.WP_EXTRA_API_URL ||
-    "https://profitbooking.in/wp-json/scraper/v1/extra",
+    "https://rajakrishna.in/wp-json/scraper/v1/extra",
   wpUser: process.env.WP_USER,
   wpPass: process.env.WP_PASS,
   googleSheet: {
@@ -812,3 +812,4 @@ main().catch((err) => {
   console.error("Main: Uncaught error in main execution flow:", err);
   process.exit(1);
 });
+
